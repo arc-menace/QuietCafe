@@ -53,15 +53,16 @@ while True:
   
     # converting the fps into integer 
     fps = int(fps) 
+    fpm = 60 * fps
 
-    frameSpeeds.append(fps)
+    frameSpeeds.append(fpm)
   
     # converting the fps to string so that we can display it on frame 
     # by using putText function 
     fps = str(fps) 
   
     # putting the FPS count on the frame 
-    cv2.putText(frame, f'FPS {fps} | Average FPS {sum(frameSpeeds) / len(frameSpeeds)}', (7, 70), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2) 
+    cv2.putText(frame, f'FPM {fpm} | Average FPS {sum(frameSpeeds) / len(frameSpeeds)}', (7, 70), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2) 
 
     # Run YOLO model on the frame
     results = model(frame)

@@ -36,11 +36,6 @@ model = YOLO('yolov8n.pt')
 # Open webcam (use 0 for default webcam)
 cap = VideoCapture(0)
 
-# Check if webcam is opened correctly
-if not cap.isOpened():
-    print("Error: Could not open webcam.")
-    exit()
-
 prev_frame_time = 0
 
 new_frame_time = 0
@@ -49,11 +44,7 @@ frameSpeeds = []
 
 # Loop to read frames from webcam
 while True:
-    ret, frame = cap.read(); 
-
-    if not ret:
-        print("Error: Failed to capture frame.")
-        break
+    frame = cap.read(); 
         
     new_frame_time = time.time()
 

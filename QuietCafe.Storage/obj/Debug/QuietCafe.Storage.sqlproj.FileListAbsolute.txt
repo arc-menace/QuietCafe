@@ -1,0 +1,10 @@
+C:\git\QuietCafe\QuietCafe.Storage\bin\Debug\QuietCafe.Storage.dacpac
+C:\git\QuietCafe\QuietCafe.Storage\bin\Debug\QuietCafe.Storage.dll
+C:\git\QuietCafe\QuietCafe.Storage\bin\Debug\QuietCafe.Storage.pdb
+C:\git\QuietCafe\QuietCafe.Storage\obj\Debug\QuietCafe.Storage.sqlproj.AssemblyReference.cache
+C:\git\QuietCafe\QuietCafe.Storage\obj\Debug\QuietCafe.Storage.dll
+C:\git\QuietCafe\QuietCafe.Storage\obj\Debug\QuietCafe.Storage.pdb
+C:\git\QuietCafe\QuietCafe.Storage\obj\Debug\Model.xml
+C:\git\QuietCafe\QuietCafe.Storage\obj\Debug\refactor.xml
+C:\git\QuietCafe\QuietCafe.Storage\obj\Debug\postdeploy.sql
+C:\git\QuietCafe\QuietCafe.Storage\obj\Debug\predeploy.sql

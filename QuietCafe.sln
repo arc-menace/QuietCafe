@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuietCafe.Api", "QuietCafe.Api\QuietCafe.Api.csproj", "{499CE3FC-1B83-4B9A-BEBC-1934E4A504BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuietCafe.Shared", "QuietCafe.Models\QuietCafe.Shared.csproj", "{8607555E-B0ED-4DA4-AE08-FE6E99C546FD}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "QuietCafe.Storage", "QuietCafe.Storage\QuietCafe.Storage.sqlproj", "{EA3EB336-0256-4825-A9E3-4F5CA912E5D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{499CE3FC-1B83-4B9A-BEBC-1934E4A504BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499CE3FC-1B83-4B9A-BEBC-1934E4A504BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499CE3FC-1B83-4B9A-BEBC-1934E4A504BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499CE3FC-1B83-4B9A-BEBC-1934E4A504BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8607555E-B0ED-4DA4-AE08-FE6E99C546FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8607555E-B0ED-4DA4-AE08-FE6E99C546FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8607555E-B0ED-4DA4-AE08-FE6E99C546FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8607555E-B0ED-4DA4-AE08-FE6E99C546FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3EB336-0256-4825-A9E3-4F5CA912E5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3EB336-0256-4825-A9E3-4F5CA912E5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3EB336-0256-4825-A9E3-4F5CA912E5D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA3EB336-0256-4825-A9E3-4F5CA912E5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3EB336-0256-4825-A9E3-4F5CA912E5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3EB336-0256-4825-A9E3-4F5CA912E5D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

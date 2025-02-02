@@ -1,12 +1,40 @@
 import cv2
 from ultralytics import YOLO
 import time
+import queue
+import threading
+
+# from: https://stackoverflow.com/questions/43665208/how-to-get-the-latest-frame-from-capture-device-camera-in-opencv
+class VideoCapture:
+
+  def __init__(self, name):
+    self.cap = cv2.VideoCapture(name)
+    self.q = queue.Queue()
+    t = threading.Thread(target=self._reader)
+    t.daemon = True
+    t.start()
+
+  # read frames as soon as they are available, keeping only most recent one
+  def _reader(self):
+    while True:
+      ret, frame = self.cap.read()
+      if not ret:
+        break
+      if not self.q.empty():
+        try:
+          self.q.get_nowait()   # discard previous (unprocessed) frame
+        except queue.Empty:
+          pass
+      self.q.put(frame)
+
+  def read(self):
+    return self.q.get()
 
 # Load the YOLO model (yolov8n pretrained on COCO)
 model = YOLO('yolov8n.pt')
 
 # Open webcam (use 0 for default webcam)
-cap = cv2.VideoCapture(0)
+cap = VideoCapture(0)
 
 # Check if webcam is opened correctly
 if not cap.isOpened():
